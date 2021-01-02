@@ -5,7 +5,7 @@ In this project, we'll use the [Goodreads dataset](https://sites.google.com/eng.
 > Mengting Wan, Julian McAuley, "Item Recommendation on Monotonic Behavior Chains", RecSys 2018.
 
 
-## Basic recommender system [80% of grade]
+## Basic recommender system
 
 Your recommendation model should use Spark's alternating least squares (ALS) method to learn latent factor representations for users and items.
 This model has some hyper-parameters that you should tune to optimize performance on the validation set, notably: 
@@ -25,5 +25,5 @@ For this project, the data splitting was as follows:
 In general, users with few interactions (say, fewer than 10) may not provide sufficient data for evaluation, especially after partitioning their observations into train/test.
 We discarded these users from the experiment
 
-## Extensions [20% of grade]
+## Extensions
    - *Comparison to single-machine implementations*: compared Spark's parallel ALS model to a single-machine implementation, e.g. lightfm. Our comparison measures both effeciency (model fitting time as a function of data set size) and resulting accuracy.
